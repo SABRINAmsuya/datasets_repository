@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Datawire Repository</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+{% load static %}
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>Datawire</b> Repository</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button">Datasets</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="/w3images/architect.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span> <span class="w3-hide-small w3-text-light-grey">Architects</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Datasets</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding"><a href="{% url 'public_datasets' %}">Public Datasets</a></div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding"><a href="private_datasets.html">Private Datasets</a></div>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>Datawire Repository is a comprehensive platform designed to host and manage a diverse collection of datasets. Users can explore both public and private datasets categorized by various topics. Our system facilitates easy access to public datasets for everyone, while private datasets are secured behind a login and registration process. Data providers can contribute their datasets, enhancing the repository’s breadth and utility. With robust features for dataset management and user access control, Datawire Repository aims to be a valuable resource for data enthusiasts and researchers.
+    </p>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <h3>Face Datasets</h3>
+      <p class="w3-opacity">For facial recognition and other purposes</p>
+      <p><button class="w3-button w3-light-grey w3-block">View Datasets</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <h3>Voice Datasets</h3>
+      <p class="w3-opacity">For voice recognition and other purposes</p>
+      <p><button class="w3-button w3-light-grey w3-block">View Datasets</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <h3>Texts Datasets</h3>
+      <p class="w3-opacity">Texts of different languages for NLP and other purposes</p>
+      <p><button class="w3-button w3-light-grey w3-block">View Datasets</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <h3>Image Datasets</h3>
+      <p class="w3-opacity">Images for different objects detection</p>
+      <p><button class="w3-button w3-light-grey w3-block">View Datasets</button></p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Share with us.</h3>
+    <p>Lets get in touch and share your datasets.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Title" required name="Title">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Description" required name="Description">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> UPLOAD
+      </button>
+    </form>
+  </div>
+  
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by SABRINA A. MSUYA</p>
+</footer>
+
+</body>
+</html>
